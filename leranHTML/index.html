@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3school</title>   
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="naruto1.png">
+    
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+  <body>
+  
+  <h2>CSS Layout Float</h2>
+  <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+  <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+  
+  <header>
+    <h2>Cities</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+    
+    <article>
+      <h1>London</h1>
+      <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>Footer</p>
+  </footer>
+  
+  </body>
+
+  <img id="testjv" width="200" height="200" src="data:image/jpeg;base64,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">
+ <div>
+  <button onclick="light(1)">on</button>
+  <button onclick="light(0)">off</button>
+</div>
+<script>
+  function light(n) 
+  {
+    if (n==1)
+    {
+    document.getElementById("testjv").src = "https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/2467585d45ac4048e01ce3ca901e05e1.png"
+    }
+    else{
+    document.getElementById("testjv").src = "https://dictionary.cambridge.org/vi/images/thumb/lightb_noun_002_21219.jpg?version=5.0.274"
+    }
+}
+</script>
+  </div>
+ </body>
+</html>
