@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+div {
+    border: 5px solid blue;
+}
+
+.main{
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+    margin: 40px 0 40px 0;
+    padding: 0 40px 0 40px;
+    width: 500px;
+    overflow: hidden;
+
+    /* position: relative;
+    left: 950px;
+     */
+}
+

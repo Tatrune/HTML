@@ -1,0 +1,137 @@
+HTML
+<tagname style="property:value;">
+
+==================================================================================================================== Syntax
+
+<h2 title="I'm a header">The title Attribute</h2> : (title)extra information about an element.
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+<q> tag defines a short quotation.
+<blockquote cite="link"> definest quotation
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> : is a small image displayed next to the page title in the browser tab
+<link> tag is most often used to link to external style sheets:
+<h1 style="color:Tomato;">Hello World</h1> : text color
+<h1 style="background-color:DodgerBlue;">Hello World</h1> : fill color
+<h1 style="border:2px solid Tomato;">Hello World</h1> : màu viền
+background-repeat:no-repeat 
+background-size: cover 
+background-attachment: fixed : giu hinh anh khi scroll
+background-attachment: scroll : hinh anh cuon theo scroll 
+background-image: url()
+onclick="function" :  kích hoạt khi ta nhấn vào một đối tượng nào đó của trang web (nút lệnh, link, ảnh, ...).
+
+
+==================================================================================================================== Syntax
+Use the HTML style attribute for inline styling:
+
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS "color" property for text colors
+Use the CSS "font-family" property for text fonts
+Use the CSS "font-size" property for text sizes
+Use the CSS "border" property for borders
+Use the CSS "padding" property for space inside the border
+Use the CSS "margin" property for space outside the border
+
+
+====================================================================================================================== Link
+"target" attribute can have one of the following values: <a>
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+mailto: inside the href attribute to create a link that opens the user's email program
+<a href="mailto:someone@example.com">Send email</a>
+
+<a href="#<id>"></a> : link to id
+
+====================================================================================================================== img
+Use the HTML <img> element to define an image
+Use the HTML "src" attribute to define the URL of the image
+Use the HTML "alt" attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML "width" and "height" attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right
+
+img map
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+src="../images/picture.jpg" :  located in the folder one level up from the current folder
+src="images/picture.jpg" : located in the current folder
+====================================================================================================================== border
+The "border-style" property specifies what kind of border to display.
+
+The following values are allowed:
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+====================================================================================================================== căn chỉnh
+position: relative; (đối tác)
+left: px;
+
+position: absolute; (tuyệt đối)
+right: 0;
+top: 0;
+
+display: block; (display đi chung với margin)
+margin: 20px auto;
+border-radius: px; (bo tròn)
+
+====================================================================================================================== table
+{
+The <colgroup> element should be used as a container for the column specifications.
+Each group is specified with a <col> element.
+The "span"  how many columns that get the style.
+The "style" the style to give the columns.
+}
+visibility: collapse (hide columns)
+border-collapse: collapse (single border)
+"tr" stands for table row.
+"th" stands for table header.
+"td" stands for table data.
+"colspan" attribute represents the number of columns to span
+"rowspan" attribute represents the number of rows to span.
+
+====================================================================================================================== list
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+====================================================================================================================== JavaScrip
+let traicay = new Array(4) tạo 1 mảng 4 phần tử
+
+const traicay = ["buoi","xoai","cam"] : in 1 mang
+	for (const trai of traicay) {
+	(trai+"<br/>")
+	}
+document.write("") : chèn một chuỗi văn bản hoặc mã HTML vào trang web.
+document.getElementById("id") : trả về phần tử có thuộc tính ID là giá trị được chỉ định.
