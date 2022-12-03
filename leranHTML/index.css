@@ -1,33 +1,6 @@
-table,th,td
-{
-    border: 1px solid rgb(81, 81, 124); ;
-    box-sizing: border-box;
-    border-collapse: collapse ;
- 
-}
-
-th,td
-{
-    border-color: rgb(255, 0, 0);
-}
-
-#top
-{
-    text-align: center;
-}
-body
-{
-    margin: 0;
-}
-
-#main,#bottom,.class
-{
-    margin: 20px 0 ;
-}
-
-#row
-{
-    text-decoration-line: ;
-    color: rgb(230, 0, 255);
-}
-
+@media (max-width: 600px) {
+        nav, article {
+          width: 100%;
+          height: auto;
+        }
+      }

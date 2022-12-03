@@ -22,6 +22,8 @@ HTML
 <h1 style="color:Tomato;">Hello World</h1> : text color
 <h1 style="background-color:DodgerBlue;">Hello World</h1> : fill color
 <h1 style="border:2px solid Tomato;">Hello World</h1> : màu viền
+"outline" is a line drawn outside the element's border.
+"outline-offset" property adds space between an outline and the border
 background-repeat:no-repeat 
 background-size: cover 
 background-attachment: fixed : giu hinh anh khi scroll
@@ -63,7 +65,7 @@ Use the HTML <img> element to define an image
 Use the HTML "src" attribute to define the URL of the image
 Use the HTML "alt" attribute to define an alternate text for an image, if it cannot be displayed
 Use the HTML "width" and "height" attributes or the CSS width and height properties to define the size of the image
-Use the CSS float property to let the image float to the left or to the right
+Use the CSS "float" property to let the image float to the left or to the right                                       **
 
 img map
 <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
@@ -135,3 +137,10 @@ const traicay = ["buoi","xoai","cam"] : in 1 mang
 	}
 document.write("") : chèn một chuỗi văn bản hoặc mã HTML vào trang web.
 document.getElementById("id") : trả về phần tử có thuộc tính ID là giá trị được chỉ định.
+
+====================================================================================================================== text
+"letter-spacing"	Specifies the space between characters in a text
+"line-height"	Specifies the line height
+"text-indent"	Specifies the indentation of the first line in a text-block
+"white-space"	Specifies how to handle white-space inside an element
+"word-spacing"	Specifies the space between words in a text

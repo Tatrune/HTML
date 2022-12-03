@@ -7,72 +7,61 @@
     <title>W3school</title>   
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="naruto1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
     
 </head>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-  }
-  
-  /* Create two columns/boxes that floats next to each other */
-  nav {
-    float: left;
-    width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
-  }
-  
-  /* Clear floats after the columns */
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
+
+  <style>
+    *
+    {
+      box-sizing: border-box;
+      padding: 1px;
     }
-  }
+    header
+    {
+      text-align: center;
+      padding: 10px;
+      background-color: gray;
+      font-size: 40px;
+      font-family: 'Zen Dots', cursive;
+    }
+    nav
+    {
+      float: left;
+      width: 30%;
+      min-height: 200px;
+      padding: 20px;
+      background-color: rgb(77, 77, 77);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+    }
+    article
+    {
+      float: left;
+      width: 70%;
+      padding: 20px;
+      height: 200px;
+      background-color: rgb(9, 9, 9);
+    }
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer
+    {
+      padding: 2px;
+      background-color: gray;
+      text-align: center;
+      font-size: larger;
+    }
+
   </style>
+
+
   <body>
   
   <h2>CSS Layout Float</h2>
@@ -86,7 +75,7 @@
   <section>
     <nav>
       <ul>
-        <li><a href="#">London</a></li>
+        <li><button> <a target="_blank" href="https://www.facebook.com/">London</a></li></button>
         <li><a href="#">Paris</a></li>
         <li><a href="#">Tokyo</a></li>
       </ul>
@@ -100,7 +89,7 @@
   </section>
   
   <footer>
-    <p>Footer</p>
+    <p class="ol">Footer</p>
   </footer>
   
   </body>
